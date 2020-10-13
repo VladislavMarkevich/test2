@@ -1,0 +1,44 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": ["plugin:flowtype/recommended", "plugin:react/recommended", "prettier"],
+  "plugins": ["flowtype", "react", "import", "prettier"],
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  },
+  "rules": {
+    "no-var": 2,
+    "no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "[iI]gnored",
+        "argsIgnorePattern": "[iI]gnored"
+      }
+    ],
+
+    "flowtype/boolean-style": 1,
+    "flowtype/newline-after-flow-annotation": [1, "never"],
+    "flowtype/no-dupe-keys": 1,
+    "flowtype/no-existential-type": 2,
+    "flowtype/no-primitive-constructor-types": 1,
+    "flowtype/require-indexer-name": [1, "always"],
+    "react/jsx-key": 2,
+
+    "import/no-unresolved": [2, {"commonjs": true, "amd": true}],
+    "import/named": 2,
+    "import/default": 2,
+    "import/namespace": 2,
+    "import/no-self-import": 2,
+    "import/no-cycle": 2,
+    "import/no-useless-path-segments": 2,
+    "import/export": 2,
+
+    "prettier/prettier": ["error"]
+  }
+}
