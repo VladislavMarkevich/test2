@@ -1,5 +1,9 @@
 import {combineReducers} from "redux";
 
-const combine = combineReducers({});
+import URLReducers from "kernel/url/reducers";
+
+const combine = combineReducers({
+  URL: URLReducers
+});
 
 export default combine;
