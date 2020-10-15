@@ -2,7 +2,7 @@
 export type PassedProps = {};
 
 export type DispatchActions = {
-  onChangePage: (newUlr: string) => void
+  onChangePage: (newUrl: string) => void
 };
 
 export type ResultSelector = {};

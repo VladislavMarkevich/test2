@@ -6,6 +6,7 @@
     "@babel/runtime": "^7.11.2",
     "components": "link:./src/components",
     "kernel": "link:./src/kernel",
+    "pages": "link:./src/pages",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.2.1",
@@ -16,9 +17,9 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "styled-components": "^5.2.0",
-    "pages": "link:./src/pages",
-    "store": "link:./src/store"
+    "store": "link:./src/store",
+    "styled": "link:./src/styled",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",

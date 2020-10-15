@@ -1,6 +1,6 @@
 //@flow
 export type PassedProps = {
-  onChangePage: (newUrl: string) => void,
+  children: any,
   isMenuPage?: boolean
 };
 

@@ -35,7 +35,6 @@ function App(props: Props): any {
           return <Route {...page} key={path} />;
         })}
       </Switch>
-      ;
     </AppWrapperStyled>
   );
 }
