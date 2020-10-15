@@ -1,4 +1,5 @@
 const theme = {
+  mobileVersionFrom: "768px",
   mainProportion: {
     header: "12%",
     content: "88%"

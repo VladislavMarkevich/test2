@@ -24,13 +24,13 @@ export const RightBlockStyled = styled.div`
 `;
 
 export const MenuWrapperStyled = styled.div`
-  @media screen and (max-width: 768px) {
+  @media only screen and (max-width: ${props => props?.theme?.mobileVersionFrom || ""}) {
     .menu {
       display: none;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: ${props => props?.theme?.mobileVersionFrom || ""}) {
     .menu {
       display: flex;
       flex-flow: row nowrap;
@@ -59,10 +59,10 @@ export const MenuWrapperStyled = styled.div`
 `;
 
 export const MenuButton = styled.img.attrs({src: "assets/images/menu.png"})`
-  @media screen and (min-width: 768px) {
+  @media only screen and (min-width: ${props => props?.theme?.mobileVersionFrom || ""}) {
     display: none;
   }
-  @media screen and (max-width: 768px) {
+  @media only screen and (max-width: ${props => props?.theme?.mobileVersionFrom || ""}) {
     width: 28px;
     height: 24px;
     margin: 0 25px 0 0;
