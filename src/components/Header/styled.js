@@ -18,6 +18,7 @@ export const LogoStyled = styled.img`
 
 export const RightBlockStyled = styled.div`
   display: flex;
+  margin: 0 25px 0 0;
   flex-flow: row nowrap;
   align-items: center;
   height: 100%;
@@ -65,7 +66,6 @@ export const MenuButton = styled.img.attrs({src: "assets/images/menu.png"})`
   @media only screen and (max-width: ${props => props?.theme?.mobileVersionFrom || ""}) {
     width: 28px;
     height: 24px;
-    margin: 0 25px 0 0;
     cursor: pointer;
   }
 `;

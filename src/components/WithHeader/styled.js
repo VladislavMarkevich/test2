@@ -16,5 +16,6 @@ export const HeaderWrapperStyled = styled.div`
 export const ChildrenWrapperStyled = styled.div`
   display: flex;
   flex-basis: ${props => props?.theme?.mainProportion?.content || ""};
+  max-height: ${props => props?.theme?.mainProportion?.content || ""};
   justify-content: center;
 `;
